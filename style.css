@@ -24,6 +24,7 @@ button {
 }
 
 nav {
+      position: relative;
       justify-content: space-between;
       height: 60px;
       width: 100vw;
@@ -137,12 +138,34 @@ nav {
 
 }
 
+.nav-right-left .open-app {
+      display: none;
+}
+
 .nav-right-left div:hover {
       transform: scale(1.04);
 }
 
 .nav-right-left div a {
       color: #000000;
+}
+.ham-burger{
+      display: none;
+}
+
+.ham-burger-slider{
+      position: absolute;
+      z-index: 10;
+      right: -100%;
+      width: 100vw;
+      height: 100vh;
+      opacity: 0;
+      background-color: #000000;
+      transition: all 250ms ease-in;
+}
+.ham-burger-click{
+      opacity: 1;
+      right: 0px;
 }
 
 .main {
@@ -375,7 +398,7 @@ nav {
 
 /* css for media player  */
 
-.media-player{
+.media-player {
       position: absolute;
       transform: translateY(100%);
       padding: 10px 30px;
@@ -385,7 +408,8 @@ nav {
       background-color: #000000;
       transition: all 900ms ease-out;
 }
-.media-player-translateY{
+
+.media-player-translateY {
       transform: translateY(-100%);
 }
 
@@ -393,7 +417,8 @@ nav {
       gap: 20px;
       width: 200px;
 }
-.first p{
+
+.first p {
       font-size: 11px;
 }
 
@@ -431,7 +456,8 @@ nav {
       /* background-color: #1ed760 !important; */
 
 }
-.media-player .second .second-second .seek-bar-main .seek-bar{
+
+.media-player .second .second-second .seek-bar-main .seek-bar {
       position: relative;
       width: 1%;
       height: 4px;
@@ -439,11 +465,13 @@ nav {
       /* background-color: #1ed760 !important; */
 
 }
-.media-player .second .second-second p{
+
+.media-player .second .second-second p {
       font-size: 11px;
       color: rgba(255, 255, 255, 0.7);
 }
-.media-player .second .second-second .seek-bar-main:hover .seek-bar{
+
+.media-player .second .second-second .seek-bar-main:hover .seek-bar {
       background-color: #1ed760;
 }
 
@@ -459,15 +487,54 @@ nav {
 }
 
 .media-player .second .second-second .seek-bar-main:hover .seek-bar .circle {
-display: block;
+      display: block;
 }
 
 
-.media-player .third{
-       gap: 20px;
+.media-player .third {
+      gap: 20px;
 }
 
- /* let write some meida quarry */
+/* let write some meida quarry */
 
- /* i will wirte css this time for mobile phones */
+/* i will wirte css this time for mobile phones */
 
+@media (max-width:1024px) {
+
+      .nav-left-right,
+      .nav-right-right,
+      .install-aap,
+      .log-in,
+      .anchor {
+            display: none !important;
+      }
+
+      .nav-right {
+            gap: 10px;
+            margin-right: 0px;
+      }
+
+      .nav-right-left {
+            padding-right: 0px;
+      }
+
+      .nav-right-left .open-app {
+            display: flex;
+            height: 35px;
+      }
+
+      .ham-burger{
+            display: flex;
+      }
+      .main{
+            padding: 0px;
+      }
+
+      .main-left {
+         display: none;
+      }
+      .main-right {
+            width: 100%;
+            border-radius: 0px;
+      }
+}

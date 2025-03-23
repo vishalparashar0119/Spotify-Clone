@@ -202,6 +202,15 @@ async function main() {
            }
       });
 
+      // function for hamburger click menue
+
+      document.querySelector(".ham-burger").addEventListener("click",()=>{
+            document.querySelector(".ham-burger-slider").classList.add("ham-burger-click");
+      })
+
+      document.querySelector("#close-ham-burger").addEventListener("click",()=>{
+            document.querySelector(".ham-burger-slider").classList.remove("ham-burger-click");
+      })
 
 
 
