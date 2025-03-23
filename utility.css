@@ -1,0 +1,40 @@
+
+.display-flex{
+      display: flex;
+}
+
+.justify-content-center{
+      justify-content: center;
+}
+
+.justify-content-space-between{
+      justify-content: space-between;
+}
+.justify-content-space-evenly{
+      justify-content: space-evenly;
+}
+
+.align-item-center{
+      align-items: center;
+}
+
+.flex-direction-column{
+      flex-direction: column;
+}
+
+.border{
+      border: 2px solid red;
+}
+
+.invert{
+      filter: invert(1);
+}
+
+.display-inline-block{
+      display: inline-block;
+}
+
+.display-none{
+      display: none;
+}
+

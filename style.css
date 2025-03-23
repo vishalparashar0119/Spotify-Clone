@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+}
+
+body {
+      position: relative;
+      background-color: #000000;
+      overflow: hidden;
+
+}
+
+a {
+      text-decoration: none;
+}
+
+button {
+      outline: none;
+      border: none;
+}
+
+nav {
+      justify-content: space-between;
+      height: 60px;
+      width: 100vw;
+      background-color: #000000;
+}
+
+
+.nav-left {
+      gap: 25px;
+      margin-left: 20px;
+}
+
+.nav-left-right {
+      gap: 10px;
+}
+
+.nav-left-right-img-div {
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      background-color: #1f1f1f;
+}
+
+.nav-left-right-img-div:hover {
+      transform: scale(1.05);
+      background-color: rgba(255, 255, 255, 0.15);
+}
+
+.nav-left-right-input-div {
+
+      gap: 10px;
+      height: 45px;
+      width: 500px;
+      padding: 10px;
+      border-radius: 50px;
+      border: 1px solid transparent;
+      background-color: #1f1f1f;
+      transition: all 290ms ease-out;
+
+}
+
+.nav-left-right-input-div:hover {
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      background-color: rgba(255, 255, 255, 0.14);
+}
+
+.nav-left-right-input-div input {
+      outline: none;
+      border: none;
+      border-right: 1px solid rgba(255, 255, 255, 0.5);
+      color: #ffffff;
+      background-color: transparent;
+      font-size: 16px;
+      height: 100%;
+      width: 100%;
+}
+
+.nav-left-right-input-div input::placeholder {
+      color: #ffffff;
+      opacity: 0.7;
+}
+
+.nav-right {
+      gap: 10px;
+      margin-right: 200px;
+}
+
+.nav-right-right {
+      gap: 10px;
+      border-right: 1px solid rgba(255, 255, 255, 0.7);
+      font-size: 15px;
+      padding-right: 30px;
+      font-weight: 600;
+}
+
+.nav-right-right a {
+      color: rgba(255, 255, 255, 0.7);
+      margin: 2px;
+}
+
+.nav-right-right a:hover {
+      transform: scale(1.1);
+      color: rgba(255, 255, 255, 0.9);
+}
+
+.nav-right-left {
+      font-size: 15px;
+      padding-right: 30px;
+      font-weight: 600;
+}
+
+.nav-right-left a {
+      color: rgba(255, 255, 255, 0.7);
+      margin: 10px;
+}
+
+.anchor:hover {
+      transform: scale(1.04);
+}
+
+.nav-right-left a img {
+      color: rgba(255, 255, 255, 0.7);
+      margin-right: 5px;
+}
+
+.nav-right-left div {
+      height: 45px;
+      width: 100px;
+      border-radius: 50px;
+      background-color: #ffffff;
+
+}
+
+.nav-right-left div:hover {
+      transform: scale(1.04);
+}
+
+.nav-right-left div a {
+      color: #000000;
+}
+
+.main {
+      height: calc(100vh - 60px);
+      width: 100%;
+      gap: 7px;
+      padding: 5px;
+      /* overflow: hidden; */
+}
+
+.main-left {
+      width: 25%;
+      height: 100%;
+      overflow: hidden;
+      border-radius: 10px;
+      color: #ffffff;
+      background-color: #121212;
+}
+
+.main-left .heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 10vh;
+      padding: 10px 10px 40px;
+      width: 100%;
+}
+
+.main-left .heading h3 {
+      font-weight: 600;
+      font-size: 15px;
+}
+
+.main-left .heading-img-div {
+      border-radius: 50%;
+      padding: 5px;
+}
+
+.main-left .heading-img-div:hover {
+      background-color: rgba(255, 255, 255, 0.11);
+}
+
+.main-left .heading img {
+      width: 18px;
+      height: 18px;
+}
+
+.main-left-library-box {
+      height: 310px;
+      overflow-y: hidden;
+
+}
+
+.main-left-library-box::-webkit-scrollbar {
+      width: 15px;
+}
+
+.main-left-library-box::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.1);
+}
+
+.main-left-library-box::-webkit-scrollbar-track {
+      background-color: transparent;
+}
+
+
+.main-left-library-box:hover {
+      overflow-y: scroll;
+}
+
+.main-left-library-box-card {
+      margin: 20px 7px;
+      padding: 10px;
+      height: 160px;
+      background-color: #1f1f1f;
+      border-radius: 10px;
+      gap: 5px;
+}
+
+.main-left-library-box h4 {
+      font-weight: 600;
+}
+
+.main-left-library-box h5 {
+      font-weight: 400;
+}
+
+.main-left-library-box button {
+      width: 200px;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 50px;
+      font-weight: 600;
+}
+
+.main-left-library-box button:hover {
+      transform: scale(1.02);
+}
+
+.main-left-footer {
+      height: 20vh;
+      margin: 0px 7px;
+      border-radius: 10px;
+      padding: 10px;
+}
+
+.main-left-footer-first {
+      gap: 15px;
+      padding: 20px;
+      flex-wrap: wrap;
+      font-size: 12px;
+
+}
+
+.main-left-footer-first a {
+      color: rgba(255, 255, 255, 0.7)
+}
+
+.main-left-footer-second {
+      width: 120px;
+      padding: 5px;
+      font-size: 15px;
+      border: 1px solid #ffffff;
+      border-radius: 50px;
+      gap: 5px;
+      color: #ffffff;
+}
+
+.main-left-footer-second:hover {
+      transform: scale(1.02);
+}
+
+/* code for main section  i will write code for the right section */
+
+.main-right {
+      height: 100%;
+      overflow: hidden;
+      width: 75%;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #1f1f1f;
+}
+
+.main-right:hover {
+      overflow-y: scroll;
+}
+
+.main-right::-webkit-scrollbar {
+      width: 15px;
+}
+
+.main-right::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.07);
+      position: absolute;
+}
+
+.main-right::-webkit-scrollbar-track {
+      background-color: transparent;
+}
+
+.main-card-section .heading>* {
+      color: #ffffff;
+}
+
+.main-card-section .card-box {
+      flex-wrap: wrap;
+      width: 100%;
+      height: auto;
+      margin-top: 10px;
+}
+
+.main-card-section .card-box .card {
+      position: relative;
+      margin: 5px;
+      padding: 8px;
+      width: 170px;
+      height: 250px;
+      transition: all 200ms ease-out;
+}
+
+.card-box .card .play-button {
+      position: absolute;
+      opacity: 0;
+      right: 20px;
+      bottom: 50px;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background-color: #1ed760;
+      transition: all 300ms ease-out;
+}
+
+.main-card-section .card-box .card:hover {
+      background-color: rgba(255, 255, 255, 0.03);
+}
+
+.main-card-section .card-box .card:hover .play-button {
+      opacity: 1;
+      bottom: 80px;
+
+}
+
+.main-card-section .card-box .card img {
+      width: 100%;
+      object-fit: contain;
+}
+
+.main-card-section .card-box .card .card-img {
+      width: 154px;
+      height: 154px;
+      overflow: hidden;
+      border-radius: 10px;
+}
+
+.popular-artist .card .card-img {
+      border-radius: 50% !important;
+}
+
+.main-card-section .card-box .card h4 {
+      color: white;
+      margin-top: 10px;
+      font-weight: 500;
+}
+
+.main-card-section .card-box .card p {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 14px;
+      font-weight: 500;
+}
+
+/* css for media player  */
+
+.media-player{
+      position: absolute;
+      transform: translateY(100%);
+      padding: 10px 30px;
+      color: #ffffff;
+      width: 100vw;
+      height: 90px;
+      background-color: #000000;
+      transition: all 900ms ease-out;
+}
+.media-player-translateY{
+      transform: translateY(-100%);
+}
+
+.media-player .first {
+      gap: 20px;
+      width: 200px;
+}
+.first p{
+      font-size: 11px;
+}
+
+.media-player .second {
+      width: 600px;
+      gap: 10px;
+}
+
+.media-player .second .second-first {
+      padding: 5px;
+      gap: 30px;
+}
+
+.media-player .second .second-first div {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: #ffffff;
+}
+
+.media-player .second .second-second {
+      height: 4px;
+      width: 100%;
+      border-radius: 10px;
+      gap: 10px;
+
+}
+
+.media-player .second .second-second .seek-bar-main {
+      cursor: pointer;
+      width: 100%;
+      height: 4px;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.5);
+      /* background-color: #1ed760 !important; */
+
+}
+.media-player .second .second-second .seek-bar-main .seek-bar{
+      position: relative;
+      width: 1%;
+      height: 4px;
+      border-radius: 10px;
+      /* background-color: #1ed760 !important; */
+
+}
+.media-player .second .second-second p{
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.7);
+}
+.media-player .second .second-second .seek-bar-main:hover .seek-bar{
+      background-color: #1ed760;
+}
+
+.media-player .second .second-second .seek-bar-main .seek-bar .circle {
+      position: absolute;
+      bottom: -4px;
+      right: 0px;
+      display: none;
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+      background-color: #ffffff;
+}
+
+.media-player .second .second-second .seek-bar-main:hover .seek-bar .circle {
+display: block;
+}
+
+
+.media-player .third{
+       gap: 20px;
+}
+
+ /* let write some meida quarry */
+

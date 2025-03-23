@@ -1,0 +1,145 @@
+xmlns="http://www.w3.org/2000/svg"
+
+nav color = #000000
+your library box , search bar background = #1f1f1f
+button background = #ffffff
+spotify alert signin button = #1ed760
+your library heading and footer = #121212
+
+
+
+<div class="card">
+                <div class="card-img">
+                  <img src="trendingSongsImages/imageOne.jfif" alt="">
+                </div>
+
+                <h4>Vartmaan</h4>
+                <p>UNIYAL , somya rawat</p>
+
+                <div class="play-button  display-flex justify-content-center align-item-center">
+                    <img src="icons/playTriangle.svg" alt="" height="25" width="25">
+                </div>
+          </div>
+
+
+http://127.0.0.1:5500/trendingSongs/          
+
+
+
+
+
+
+
+// code for playing musinc using java script 
+
+console.log("script is loaded ")
+
+async function getSongs() {
+      let response = await fetch("http://127.0.0.1:5500/trendingSongs/");
+      let gSongs = await response.text();
+
+
+      let div = document.createElement("div");
+      div.innerHTML = gSongs;
+
+
+      let songs = [];
+
+      let a = div.getElementsByTagName("a");
+
+
+
+      for (let i = 0; i < a.length; i++) {
+            const element = a[i];
+            if (element.href.endsWith(".mp3")) {
+                  songs.push(element);
+            }
+      }
+
+      return songs;
+}
+
+
+
+async function main(params) {
+      let songs = await getSongs();
+      console.log(songs);
+
+      //      let song = new Audio(songs[i]);
+      //      song.play();
+
+
+}
+
+main();
+
+
+
+// function for fetching images from trending songs folder
+
+
+console.log("script is loaded");
+
+async function getImages() {
+        
+      let image = [];
+      
+      // this will get images
+      let response = await fetch("http://127.0.0.1:5500/trendingSongsImages/");
+      // this will convert fetch data into text;
+      let textImages = await response.text();
+
+      // now convert this text into html
+
+      let div = document.createElement("div");
+      div.innerHTML = textImages;
+
+
+      // select all the anchor tag from div
+       
+      let a = div.getElementsByTagName("a");
+
+      // select the image anchor tag form the div
+
+      for (let i = 0; i < a.length; i++) {
+            
+            const element = a[i];
+
+            if(element.href.endsWith(".jfif")){
+                 image.push(element);
+            }
+            
+      }
+// or this will work fine or we can say that this is an advance technick
+
+//   Array.from(a).forEach(element => {
+//       console.log(element);
+//    });
+
+
+
+      return image;
+}
+
+
+getImages();
+
+
+
+
+
+
+      Array.from(a).forEach(element => {
+            if (element.href.endsWith(".jfif")) {
+                  
+                  songArtist.push(element.firstChild.innerHTML.split("-")[1].split(".")[0]);
+                  
+            }
+      });
+
+
+// code for the seek bar for the main website
+
+            <div class="seek-bar">
+              <div class="circle"></div>
+            </div>
