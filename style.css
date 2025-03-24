@@ -9,9 +9,9 @@
 
 body {
       position: relative;
-      background-color: #000000;
+      height: 100vh;
       overflow: hidden;
-
+     background-color: #000000;
 }
 
 a {
@@ -24,7 +24,6 @@ button {
 }
 
 nav {
-      position: relative;
       justify-content: space-between;
       height: 60px;
       width: 100vw;
@@ -153,20 +152,17 @@ nav {
       display: none;
 }
 
-.ham-burger-slider{
-      position: absolute;
-      z-index: 10;
-      right: -100%;
-      width: 100vw;
-      height: 100vh;
-      opacity: 0;
-      background-color: #000000;
-      transition: all 250ms ease-in;
+/* .ham-burger-slider{
+    position: absolute;
+    right: -100vw;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    transition: all 5s ease-in;
 }
 .ham-burger-click{
-      opacity: 1;
-      right: 0px;
-}
+
+} */
 
 .main {
       height: calc(100vh - 60px);
@@ -400,17 +396,17 @@ nav {
 
 .media-player {
       position: absolute;
-      transform: translateY(100%);
+      bottom: -90px;
       padding: 10px 30px;
       color: #ffffff;
       width: 100vw;
       height: 90px;
       background-color: #000000;
-      transition: all 900ms ease-out;
+      transition: all 450ms ease-out;
 }
 
 .media-player-translateY {
-      transform: translateY(-100%);
+      bottom: 0px;
 }
 
 .media-player .first {
@@ -528,6 +524,7 @@ nav {
       }
       .main{
             padding: 0px;
+            
       }
 
       .main-left {
@@ -535,6 +532,7 @@ nav {
       }
       .main-right {
             width: 100%;
+            overflow-y: scroll;
             border-radius: 0px;
       }
 }
