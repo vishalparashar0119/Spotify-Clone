@@ -14,6 +14,10 @@
       justify-content: space-evenly;
 }
 
+.justify-content-end{
+      justify-content: end;
+}
+
 .align-item-center{
       align-items: center;
 }

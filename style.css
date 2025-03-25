@@ -163,9 +163,25 @@ nav {
     background-color: #000000;
     transition: all 0.3s ease-in;
 }
+
+.ham-burger-slider div{
+ width: 100%;
+ padding: 10px 20px;
+}
+.ham-burger-slider div img{
+   transform: rotate(45deg);
+}
+
 .ham-burger-click{
    transform: translateX(0%);
 } 
+
+.ham-burger-menue{
+      margin-top: 20px;
+      color: rgba(255, 255, 255, 0.9);
+      padding-left: 30px;
+      gap: 10px;
+}
 
 
 .main {
@@ -331,15 +347,20 @@ nav {
 }
 
 .main-card-section .card-box {
-      flex-wrap: wrap;
       width: 100%;
-      height: auto;
-      margin-top: 10px;
+      overflow-x: auto;
+      height: 260px;
+      margin-top: 15px;
+      white-space: nowrap;
+}
+.main-card-section .card-box::-webkit-scrollbar {
+      display: none;
 }
 
 .main-card-section .card-box .card {
+      display: inline-block;
       position: relative;
-      margin: 5px;
+      margin: 0px 5px;
       padding: 8px;
       width: 170px;
       height: 250px;
@@ -497,6 +518,36 @@ nav {
 .media-player .third {
       gap: 20px;
 }
+
+/* lets write some code for footer  */
+
+footer{
+      width: 100%;
+      min-height: 40vh;
+      max-height: 50vh;
+      padding: 0px 20px;
+      color: rgba(255, 255, 255, 1);
+}
+
+footer .first{
+      margin: 50px 0px ;
+}
+
+footer .first div{
+      gap: 7px;
+}
+footer .first div a{
+      color: rgba(255, 255, 255, 1);
+      font-size: 14px;
+}
+
+footer .first div .img-div{
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.05);
+}
+
 
 /* let write some meida quarry */
 
