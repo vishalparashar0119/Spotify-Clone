@@ -212,6 +212,13 @@ async function main() {
             document.querySelector(".ham-burger-slider").classList.remove("ham-burger-click");
       })
 
+      document.querySelector(".nav-left-right-input-div").addEventListener("click" ,(event)=>{
+        
+            event.currentTarget.classList.add("nav-left-right-input-div-click");
+            
+     
+      })
+
 
 
 

@@ -1,0 +1,90 @@
+/* lets write some media quarry for tablet potrait mode*/
+@media (max-width:1024px) {
+
+      body {
+            overflow: hidden !important;
+      }
+
+      .nav-left-right,
+      .nav-right-right,
+      .install-aap,
+      .log-in,
+      .anchor {
+            display: none !important;
+      }
+
+      .nav-right {
+            gap: 10px;
+            margin-right: 0px;
+      }
+
+
+      .nav-right-left {
+            padding-right: 0px;
+            gap: 20px;
+      }
+
+      .nav-right-left .open-app {
+            display: flex;
+            height: 35px;
+      }
+      .nav-right-left div {
+            width: 80px;      
+      }
+
+      .ham-burger {
+            display: flex;
+      }
+
+      .main {
+            padding: 0px;
+
+      }
+
+      .main-left {
+            display: none;
+      }
+
+      .main-right {
+            width: 100%;
+            overflow-x: hidden !important;
+            overflow-y: scroll;
+            border-radius: 0px;
+      }
+
+      .main-card-section .heading h2 {
+            font-size: 2.4vw;
+      }
+
+      .main-card-section .heading a {
+            font-size: 1.6vw;
+      }
+}
+
+
+/* some media quarry for 1400px devices  */
+
+@media (max-width: 1400px) {
+
+      .nav-left-right-input-div {
+            width: 45px;
+            overflow: hidden;
+      }
+
+      .nav-left-right-input-div-click{
+            width: 35vw;
+            overflow: none;
+      }
+}
+
+/* responsive ness for 450 px devices */
+
+@media (max-width:450px){
+      .main-card-section .heading h2 {
+            font-size: 4.1vw;
+      }
+
+      .main-card-section .heading a {
+            font-size: 3.6vw;
+      }
+}
