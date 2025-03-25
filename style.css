@@ -8,9 +8,8 @@
 }
 
 body {
-      position: relative;
-      height: 100vh;
-      overflow: hidden;
+     position: relative;
+     padding: 0px;
      background-color: #000000;
 }
 
@@ -153,20 +152,21 @@ nav {
 }
 
 .ham-burger-slider{
-    position: absolute;
+    
+    position: fixed;
     top: 0px;
-    right: -100vw;
+    right: 0px;
     z-index: 10; 
     width: 100vw;
     height: 100vh;
+    transform: translateX(100%);
     background-color: #000000;
-    opacity: 0;
-    transition: all 1s ease-in;
+    transition: all 0.3s ease-in;
 }
 .ham-burger-click{
-     right: 0px;
-     opacity: 1;
+   transform: translateX(0%);
 } 
+
 
 .main {
       height: calc(100vh - 60px);
@@ -397,21 +397,24 @@ nav {
 }
 
 /* css for media player  */
-
-.media-player {
-      position: absolute;
-      bottom: -90px;
-      padding: 10px 30px;
-      color: #ffffff;
+  .media-player {
+      position: fixed;
+      bottom: 0;
+      left: 0;
       width: 100vw;
       height: 90px;
       background-color: #000000;
-      transition: all 450ms ease-out;
-}
-
-.media-player-translateY {
-      bottom: 0px;
-}
+      color: #ffffff;
+      padding: 10px 30px;
+      
+      /* Hide it initially */
+      transform: translateY(100%);
+      transition: all 500ms ease-out;
+  }
+  
+  .media-player-translateY {
+      transform: translateY(0%);
+  }
 
 .media-player .first {
       gap: 20px;
