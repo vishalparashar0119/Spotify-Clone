@@ -1,8 +1,14 @@
 /* lets write some media quarry for tablet potrait mode*/
 @media (max-width:1024px) {
 
-      body {
-            overflow: hidden !important;
+
+      .search-icon {
+            display: block;
+
+      }
+
+      .main-right::-webkit-scrollbar {
+            display: none;
       }
 
       .nav-left-right,
@@ -28,8 +34,9 @@
             display: flex;
             height: 35px;
       }
+
       .nav-right-left div {
-            width: 80px;      
+            width: 80px;
       }
 
       .ham-burger {
@@ -71,7 +78,7 @@
             overflow: hidden;
       }
 
-      .nav-left-right-input-div-click{
+      .nav-left-right-input-div-click {
             width: 35vw;
             overflow: none;
       }
@@ -79,12 +86,37 @@
 
 /* responsive ness for 450 px devices */
 
-@media (max-width:450px){
+@media (max-width:450px) {
       .main-card-section .heading h2 {
             font-size: 4.1vw;
       }
 
       .main-card-section .heading a {
             font-size: 3.6vw;
+      }
+
+      .nav-right-left {
+            font-size: 2.5vw;
+
+      }
+
+      footer {
+            padding: 0px 10px 30px;
+      }
+
+      footer .first {
+            flex-direction: column;
+            gap: 30px;
+      }
+
+
+
+      .first>*:nth-child(5) {
+            justify-content: start;
+            margin-bottom: 40px;
+      }
+
+      .main-right::-webkit-scrollbar {
+            display: none;
       }
 }

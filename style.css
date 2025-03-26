@@ -189,6 +189,12 @@ nav {
       padding-left: 30px;
       gap: 10px;
 }
+.search-icon{
+      display: none;
+  background-color: transparent !important;
+  height: 25px !important;
+  width: 25px !important;
+}
 
 
 .main {
