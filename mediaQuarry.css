@@ -1,3 +1,18 @@
+/* some media quarry for 1400px devices  */
+
+@media (max-width: 1400px) {
+
+      .nav-left-right-input-div {
+            width: 45px;
+            overflow: hidden;
+      }
+
+      .nav-left-right-input-div-click {
+            width: 35vw;
+            overflow: none;
+      }
+}
+
 /* lets write some media quarry for tablet potrait mode*/
 @media (max-width:1024px) {
 
@@ -24,7 +39,6 @@
             margin-right: 0px;
       }
 
-
       .nav-right-left {
             padding-right: 0px;
             gap: 20px;
@@ -45,7 +59,6 @@
 
       .main {
             padding: 0px;
-
       }
 
       .main-left {
@@ -58,47 +71,29 @@
             overflow-y: scroll;
             border-radius: 0px;
       }
-
-      .main-card-section .heading h2 {
-            font-size: 2.4vw;
-      }
-
-      .main-card-section .heading a {
-            font-size: 1.6vw;
-      }
 }
 
+/* media quarry for max 900 length  */
+@media (max-width:950px) {
 
-/* some media quarry for 1400px devices  */
-
-@media (max-width: 1400px) {
-
-      .nav-left-right-input-div {
-            width: 45px;
-            overflow: hidden;
+      .media-player {
+            padding: 10px;
+            justify-content: center;
       }
 
-      .nav-left-right-input-div-click {
-            width: 35vw;
-            overflow: none;
+      .media-player .first {
+            display: none;
       }
+
+      .media-player .third {
+            display: none;
+      }
+
 }
 
 /* responsive ness for 450 px devices */
 
 @media (max-width:450px) {
-      .main-card-section .heading h2 {
-            font-size: 4.1vw;
-      }
-
-      .main-card-section .heading a {
-            font-size: 3.6vw;
-      }
-
-      .nav-right-left {
-            font-size: 2.5vw;
-
-      }
 
       footer {
             padding: 0px 10px 30px;
@@ -109,7 +104,9 @@
             gap: 30px;
       }
 
-
+      .popular-artist .card .card-img {
+            border-radius: 10px !important;
+      }
 
       .first>*:nth-child(5) {
             justify-content: start;
@@ -119,4 +116,5 @@
       .main-right::-webkit-scrollbar {
             display: none;
       }
+
 }
