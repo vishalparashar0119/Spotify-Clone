@@ -90,7 +90,7 @@ async function card(img, head, subHead, doc, artist = false) {
 // function for playing song mentioned on each card
 function playSong(track, img, p) {
       let play = document.getElementById("pause-play").querySelector("img");
-      play.src = "http://127.0.0.1:5500/icons/pause.svg"
+      play.src = "/icons/pause.svg"
 
       // let image = document.getElementById("first").querySelector("img");
       // image.src = img;
@@ -127,22 +127,22 @@ function formatTime(seconds) {
 async function main() {
 
       // function for trending section 
-      let imagesSongs = await getImages("http://127.0.0.1:5500/trendingSongsImages/");
-      let nameOfSong = await getNamed("http://127.0.0.1:5500/trendingSongsImages/");
-      let songArtisName = await getSongArtist("http://127.0.0.1:5500/trendingSongsImages/");
+      let imagesSongs = await getImages("/trendingSongsImages/");
+      let nameOfSong = await getNamed("/trendingSongsImages/");
+      let songArtisName = await getSongArtist("/trendingSongsImages/");
       let trendingSection = document.querySelector(".trending-songs");
       card(imagesSongs, nameOfSong, songArtisName, trendingSection, false);
 
       // process for artist section
-      let imagesArtist = await getImages("http://127.0.0.1:5500/artist/")
-      let artistName = await getNamed("http://127.0.0.1:5500/artist/")
+      let imagesArtist = await getImages("/artist/")
+      let artistName = await getNamed("/artist/")
       let popularArtist = document.querySelector(".popular-artist");
       card(imagesArtist, artistName, songArtisName, popularArtist, true);
 
       //process for popular albums 
-      let popularAlbumsImages = await getImages("http://127.0.0.1:5500/popularAlbum/");
-      let popularAlbumName = await getNamed("http://127.0.0.1:5500/popularAlbum/");
-      let popularAlbumArtistName = await getSongArtist("http://127.0.0.1:5500/popularAlbum/");
+      let popularAlbumsImages = await getImages("/popularAlbum/");
+      let popularAlbumName = await getNamed("/popularAlbum/");
+      let popularAlbumArtistName = await getSongArtist("/popularAlbum/");
       let popularAlbum = document.querySelector(".popular-albums");
       card(popularAlbumsImages, popularAlbumName, popularAlbumArtistName, popularAlbum, false);
 
@@ -170,10 +170,10 @@ async function main() {
 
                   if (currentSong.paused) {
                         currentSong.play();
-                        element.target.src = "http://127.0.0.1:5500/icons/pause.svg"
+                        element.target.src = "/icons/pause.svg"
                   } else {
                         currentSong.pause();
-                        element.target.src = "http://127.0.0.1:5500/icons/playTriangle.svg"
+                        element.target.src = "/icons/playTriangle.svg"
                   }
             }
 
