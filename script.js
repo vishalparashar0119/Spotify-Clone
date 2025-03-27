@@ -151,6 +151,7 @@ async function main() {
 
       Array.from(document.querySelector(".trending-songs").getElementsByClassName("card")).forEach(element => {
             let h4 = element.querySelector("h4").innerHTML;
+            console.log(h4)
             let img = element.querySelector("img").src;
             let p = element.querySelector("p").innerHTML;
             element.addEventListener("click", () => {
@@ -186,7 +187,7 @@ async function main() {
             document.getElementById("current-time").innerHTML =`${formatTime(currentSong.currentTime)}`;
             document.getElementById("song-duration").innerHTML =`${formatTime(currentSong.duration)}`;
             document.querySelector(".seek-bar").style.width = (currentSong.currentTime/currentSong.duration)*100 + "%";
-      })
+      });
 
 
       // add event listner to seek bar so we can seek the song
@@ -202,24 +203,39 @@ async function main() {
            }
       });
 
-      // function for hamburger click menue
+      // function for hamburger click menue open
 
       document.querySelector(".ham-burger").addEventListener("click",()=>{
             document.querySelector(".ham-burger-slider").classList.add("ham-burger-click");
-      })
-
+      });
+      // event listner for closing hamburger menue
       document.querySelector("#close-ham-burger").addEventListener("click",()=>{
             document.querySelector(".ham-burger-slider").classList.remove("ham-burger-click");
-      })
+      });
+
+      // event listner for search bar size
 
       document.querySelector(".nav-left-right-input-div").addEventListener("click" ,(event)=>{
         
             event.currentTarget.classList.add("nav-left-right-input-div-click");
             
      
-      })
+      });
 
+      // event listner for previous and next buttons 
 
+      document.getElementById("previous-button").addEventListener("click",()=>{
+         console.log("previous is clicked")
+         console.log(currentSong.src);
+         
+      });
+      
+      
+      document.getElementById("next-button").addEventListener("click",()=>{
+         console.log("next  is clicked")
+         console.log(currentSong.src);
+         
+      });
 
 
 
